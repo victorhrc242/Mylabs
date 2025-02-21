@@ -1,0 +1,69 @@
+/* src/components/SearchBar.css */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 25px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+  }
+  
+  .search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    font-size: 18px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .search-bar button:hover {
+    background: darkred;
+  }
+  
+  /* Lista de sugestões */
+  .suggestions-list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    z-index: 10;
+  }
+  
+  .suggestions-list li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .suggestions-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  

@@ -1,0 +1,15 @@
+/* src/components/MovieItem.css */
+.movie-item {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-item:hover {
+  transform: scale(1.1);
+}
+
+.movie-thumbnail {
+  width: 100%;
+  border-radius: 5px;
+}
